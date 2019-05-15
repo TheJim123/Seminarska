@@ -142,7 +142,7 @@ Pitagorejska trojica je sestavljena iz treh celih števil $a, b, c \in \Z$, za k
 Da odgovorimo na vprašanje iz uvoda, moramo ugotoviti, ali obstaja takšna Pitagorejska trojica $(a, b, c)$, da je število $\frac{a\cdot b}{2}$ (torej ploščina trikotnika) enako dvakratniku nekega popolnega kvadrata (torej ploščini kvadrata).
 
 \begin{izr}
-Naj bo $(a, b, c)$ Pitagorejska trojica in $d$ neko pozitivno celo število. Potem je ploščina trojici pripadajočega pravokotnega trikotnika enaka ploščini kvadrata s stranico dolžine $d$ natanko tedaj, ko obstaja netrivialna celoštevilska rešitev enačbe $x^4 + y^4 = z^2$
+Naj bo $(a, b, c)$ Pitagorejska trojica in $d$ neko pozitivno celo število. Potem je ploščina trojici pripadajočega pravokotnega trikotnika enaka dvakratniku ploščine kvadrata s stranico dolžine $d$ natanko tedaj, ko obstaja netrivialna celoštevilska rešitev enačbe $x^4 + y^4 = z^2$
 \end{izr}
 \begin{proof}
 Naj bo $(a, b, c)$ Pitagorejska trojica, in $2d^2 = \frac{ab}{2}$. Označimo:
@@ -175,7 +175,7 @@ Vemo, da je $d$ celo število, saj je bodisi $x$, bodisi $y$ sodo število \\ (s
 Sledi, da je $(a, b, c)$ pitagorejska trojica in $2d^2 = 2 \cdot \frac{x^2y^2}{4} = \frac{x^2y^2}{2} = \frac{ab}{2}$.
 \end{proof}
 
-Kako pa je enačba $x^4 + y^4 = z^2$ povezana s Fermatovim poslednjim izrekom za $n=4$? Denimo, da je pozitivno celo število $z$ enako kvadratu nekega drugega celega števila $c$, torej $z=c^2$. Potem se $x^4 + y^4 = z^2$ spremeni v $x^4 + y^4 = c^4$. Sledi torej, da  če obstaja celoštevilska rešitev za $x^4 + y^4 = c^4$, obstaja tudi netrivialna celoštevilska rešitev za $x^4 + y^4 = z^2$.
+Kako pa je enačba $x^4 + y^4 = z^2$ povezana s Fermatovim poslednjim izrekom za $n=4$? Denimo, da je pozitivno celo število $z$ enako kvadratu nekega drugega celega števila $c$, torej $z=c^2$. Potem se $x^4 + y^4 = z^2$ spremeni v $x^4 + y^4 = c^4$. Sledi torej, da  če obstaja celoštevilska rešitev za $x^4 + y^4 = z^4$, obstaja tudi netrivialna celoštevilska rešitev za $x^4 + y^4 = z^2$.
 
 Preden zapišemo naslednji izrek, si poglejmo še parametrizacijo primitivnih Pitagorejskih trojic, saj bomo to znanje uporabili v naslednjem dokazu.
 \begin{definicija}
@@ -212,7 +212,7 @@ y^2=2kl,
 \end{align}
 kjer $k > l > 0$ in $gdc(k, l) = 1$ (velja tudi $k \not\equiv l~mod~2$, a tega tukaj ne potrebujemo). Po enačbi \ref{eq:one}~velja $x^2 + l^2 = k^2$. Ker je $gdc(k, l) = 1$ sledi, da je tudi $(x, l, k)$ primitivna Pitagorejska trojica. Ker je $x$ liho število, ponovno uporabimo parametrizacijo primitivnih Pitagorejskih trojic:
 \[
-x = a^2 - bl^2, l=2ab, k = a^2 + b^2,
+x = a^2 - b^2, l=2ab, k = a^2 + b^2,
 \] 
 kjer $a > b > 0$ in $gdc(a, b) = 1$.
 
@@ -228,7 +228,7 @@ Ker velja $gdc(a, b) = 1$ sledi, da so si $a^2 + b^2$, $b$ in $a$ paroma tuja š
 \[
 a = x_1^2, b = y_1^2, a^2 + b^2 = z_1^2.
 \]
-Predpostaviti smemo, da so $x_1, y_1~\text{in}~z_1$ pozitivna (cela) števila. Iz $gdc(a, b) = 1$ sledi $gdc(x_1, y_1) = 1$. Če $a$ in $b$ z tretji zgornji enačbi zamenjamo z novimi oznakami, dobimo:
+Predpostaviti smemo, da so $x_1, y_1~\text{in}~z_1$ pozitivna (cela) števila. Iz $gdc(a, b) = 1$ sledi $gdc(x_1, y_1) = 1$. Če $a$ in $b$ v tretji zgornji enačbi zamenjamo z novimi oznakami, dobimo:
 \[
 x_1^4 + y_1^4 = z_1^2,
 \]
@@ -256,7 +256,7 @@ Predpostavimo, da tako $x$, kot $y$ nista enaka $0$. Potem je $z^2$ pozitivno š
 \[
 x = \frac{a}{d}, y = \frac{b}{d}~\text{in}~z=\frac{c}{d},
 \]
-kjer so $a, b, c~\text{in}~d$ cela števila in $d$ večji od $0$. Potem so $a, b~\text{in}~c$ različi od $0$.
+kjer so $a, b, c~\text{in}~d$ cela števila in $d$ večji od $0$. Potem so $a, b~\text{in}~c$ različni od $0$.
 \begin{align*}
 x^4 + y^4 &= z^2 \\
 (\frac{a}{d})^4 + (\frac{b}{d})^4 &= (\frac{c}{d})^2 \\
@@ -267,7 +267,7 @@ Brez škode za splošnost so $a, b~\text{in}~cd$ pozitivna števila (sicer lahko
 
 \begin{posl}
 \label{pos:dva}
-Edini racionalni rešitve enačbe $y^2 = x^4 + 1$ sta $(0, \pm1)$.
+Edini racionalni rešitvi enačbe $y^2 = x^4 + 1$ sta $(0, \pm1)$.
 \end{posl}
 
 \begin{proof}
